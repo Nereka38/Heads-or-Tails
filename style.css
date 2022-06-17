@@ -2,6 +2,10 @@
     font-family: Krona system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -11,11 +15,11 @@ header {
     width: 50%;
 }
 
-/* #containerFlip {
-    display: flex;
-    align-items: center;
-    flex-flow: wrap column;
-} */
+#containerPrincipal {
+display: flex;
+justify-content:center;
+margin: 3%;
+}
 
 #buttonFlip {
 display:flex;
@@ -25,7 +29,7 @@ justify-content:center;
 #results {
     display:flex;
     justify-content: center;
-    }
+}
 
 #myImg , .imgFlip {
     width: 120px;
@@ -46,6 +50,8 @@ justify-content:center;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 10px 40px;
+    margin: 90px 800px 90px 90px;
+    position:absolute;
     
 }
 
