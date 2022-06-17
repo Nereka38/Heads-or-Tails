@@ -17,22 +17,22 @@ buttonFlip.addEventListener("click", function toss() {
     let rows = 0;
     results.innerHTML = "";
     while (rows < 1) {   
-       let arr = new Array();
+       let flip = new Array();
         for (let i = 0; i < 1; i++) 
         {       
             let val = Math.floor( Math.random() * 2 );
             if (val === 1) {
-                arr[i] = imageHeads("images/head.png");
+                flip[i] = imageHeads("images/head.png");
                 heads = heads + 1;
                 checkHeads();
             } else {
-                arr[i] = imageTails("images/tails.png");
+                flip[i] = imageTails("images/tails.png");
                 tails = tails + 1;
                 checkTails();
             }       
         }
         results.innerHTML += "<br />" + arr;
-        delete arr;
+        delete flip;
         rows++;
     }
     clicked();
@@ -75,7 +75,7 @@ function imageTails(src) {
 
 
 buttonFlip.addEventListener("click", () => {
-      let etiquetaAudio = document.createElement("audio")
-      etiquetaAudio.setAttribute("src", "./audio/mario-coin.mp3")
-      etiquetaAudio.play()
+      let audio = document.createElement("audio")
+      audio.setAttribute("src", "./audio/mario-coin.mp3")
+      audio.play()
     })
