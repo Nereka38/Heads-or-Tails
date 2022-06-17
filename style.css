@@ -1,0 +1,58 @@
+* {
+    font-family: Krona system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    width: 50%;
+}
+
+/* #containerFlip {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap column;
+} */
+
+#buttonFlip {
+display:flex;
+justify-content:center;
+}
+
+#results {
+    display:flex;
+    justify-content: center;
+    }
+
+#myImg , .imgFlip {
+    width: 120px;
+}
+
+#boxFlip {
+    width: 90px;
+    cursor:pointer;
+    
+}
+
+#boxFlip:hover {
+    filter: brightness(70%);
+}
+
+#infoFlip {
+    background-image:url("./images/nube.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 40px;
+    
+}
+
+html {
+    background: url(https://i.pinimg.com/originals/1a/cf/9f/1acf9f80504d4094e0fa4392291cbf1b.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
